@@ -1,0 +1,44 @@
+
+#background img{
+	opacity: 0.5;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	text-align: center;
+}
+	
+
+img {
+	height: 200px;
+	width: 200px;
+	margin-left: 20px;
+	border-radius: 15px;
+}
+
+.header {
+	text-align: center;
+}
+
+.float-right {
+	float: right;
+}
+
+#imgOne {
+	float: left;
+}
+
+#imgTwo {
+	float: left;
+}
+
+#imgThree {
+	float: left;
+}
+
+#reset {
+	height: 100px;
+	width: 100px;
+
+}
