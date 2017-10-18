@@ -19,21 +19,21 @@ $(function () {
 	$('#chocolate').on('click', function(){
 		var value = parseInt(Cookies.get('chocolate'));
 		Cookies.set('chocolate', value + 1);
-		$('#eaten').html('I ate ' + Cookies.get('chocolate'));
+		updateCookieCount();
 		updateTotals();
 	});
 
 	$('#sugar').on('click', function(){
 		var value = parseInt(Cookies.get('sugar'));
 		Cookies.set('sugar', value + 1);
-		$('#bite').html('I ate ' + Cookies.get('sugar'));
+		updateCookieCount();
 		updateTotals();
 	});
 
 	$('#lemon').on('click', function(){
 		var value = parseInt(Cookies.get('lemon'));
 		Cookies.set('lemon', value + 1);
-		$('#yum').html('I ate ' + Cookies.get('lemon'));
+		updateCookieCount();
 		updateTotals();
 	});
 
@@ -48,10 +48,21 @@ $(function () {
 		$('#consumed').html(totalChocolate + totalSugar + totalLemon);
 	};
 
+//function to update cookie count
+	function updateCookieCount() {
+		$('#yum').html('I ate ' + Cookies.get('lemon'));
+		$('#bite').html('I ate ' + Cookies.get('sugar'));
+		$('#eaten').html('I ate ' + Cookies.get('chocolate'));
+	}
+
 	$('#reset').on('click', function(){
 		//be able to reset the numbers
-		alert('stop eating!!!')
-		 // $.removeCookie();
+		// alert('stop eating!!!');
+		 Cookies.set('chocolate', 0);
+		 Cookies.set('sugar', 0);
+		 Cookies.set('lemon', 0);
+		 updateTotals(); //add a reset for count
+		 updateCookieCount();
 	});
 
 
