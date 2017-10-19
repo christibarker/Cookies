@@ -39,6 +39,7 @@
     width: 100%;
     height: 435px;
     opacity: 0.6;
+    border-radius: 15px;
 }
 
 .header {
@@ -57,7 +58,7 @@ body {
 img {
 	height: 200px;
 	width: 200px;
-	margin-left: 20px;
+/*	margin-left: 20px;*/
 	border-radius: 15px;
 }
 
