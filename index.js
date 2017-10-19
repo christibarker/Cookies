@@ -53,7 +53,6 @@ $(function () {
 		$('#consumed').html(totalCookies);
 		
 		return totalCookies;
-		
 	};
 
 //function to update cookie count

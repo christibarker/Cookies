@@ -20,7 +20,7 @@
    /* margin-top: 11%;*/
 } 
 
-#background h3 {
+#background h3, {
     position: relative;
     z-index: 2;
     margin-left: 9%;
@@ -68,7 +68,7 @@ img {
 	margin-left: 5%;
 }
 
-#imgOne {
+#imgOne, #imgTwo {
 	float: left;
 	padding-right: 08%;
 }
@@ -76,11 +76,6 @@ img {
 #chocolate:hover, #sugar:hover, #lemon:hover {
 	opacity: 0.3;
 	filter: alpha(opacity=30);
-}
-
-#imgTwo {
-	float: left;
-	padding-right: 08%;
 }
 
 #imgThree {
