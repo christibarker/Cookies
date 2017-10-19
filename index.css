@@ -106,6 +106,6 @@ img {
 }
 
 #reset:hover {
-	/*box-shadow: 0, 0, 20px, green;*/
-	color: yellow;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
 }

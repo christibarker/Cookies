@@ -14,9 +14,9 @@ $(function () {
 		Cookies.set('lemon', 0);
 	}
 
-	if(updateTotals() === 100) {
-		alert('You won a free cookie!');
-	}
+	// if(updateTotals() === 100) {
+	// 	alert('You won a free cookie!');
+	// }
 
 	//create click event that adds count to cookies eaten
 	$('#chocolate').on('click', function(){
@@ -49,8 +49,10 @@ $(function () {
 		var totalLemon = parseInt(Cookies.get('lemon'));
 
 		var totalCookies = totalChocolate + totalSugar + totalLemon;
-	
+
 		$('#consumed').html(totalCookies);
+		
+		return totalCookies;
 		
 	};
 
@@ -60,7 +62,7 @@ $(function () {
 		$('#bite').html('you ate : ' + Cookies.get('sugar'));
 		$('#eaten').html('you ate: ' + Cookies.get('chocolate'));
 	}
-
+//reset cookie count
 	$('#reset').on('click', function(){
 		//be able to reset the numbers
 		alert('You are reseting total cookie count!!!');
