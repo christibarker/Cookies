@@ -1,12 +1,56 @@
-
-#background img{
-	opacity: 0.5;
-	height: 100%;
-	width: 100%;
+/*css for background image and headers*/
+#background {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 435px;
 }
 
+#background h1 {
+    position: relative;
+    z-index: 2;
+    margin-top: 14%;
+    margin-left: 8%;
+} 
+
+#background h2 {
+    position: relative;
+    z-index: 2;
+    margin-left: 8%;
+    margin-top: 12%;
+} 
+
+#background h3 {
+    position: relative;
+    z-index: 2;
+    margin-left: 9%;
+} 
+
+#background h4 {
+    position: relative;
+    z-index: 2;
+    margin-left: 9%;
+} 
+
+#background img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 435px;
+    opacity: 0.6;
+}
+
+.header {
+	text-align: center;
+
+}
+
+/*css for body*/
 body {
 	text-align: center;
+	background-color: rgb(174, 184, 155);
+	/*color: navy;*/
 }
 	
 
@@ -17,27 +61,41 @@ img {
 	border-radius: 15px;
 }
 
-.header {
-	text-align: center;
-}
+/*css for cookies*/
 
-.float-right {
-	float: right;
+#cookie_img {
+	margin-left: 5%;
 }
 
 #imgOne {
 	float: left;
+	padding-right: 08%;
 }
 
 #imgTwo {
 	float: left;
+	padding-right: 08%;
 }
 
 #imgThree {
 	float: left;
 }
 
+/*css for total consumed*/
+.float-right {
+	float: right;
+	font-weight: bold;
+	padding-top: 2%;
+    margin-right: 3%;
+
+}
+
+/*css for reset button*/
+
 #reset {
+	position: fixed;
+	right: 10px;
+    bottom: 10px;
 	height: 100px;
 	width: 100px;
 

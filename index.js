@@ -50,9 +50,9 @@ $(function () {
 
 //function to update cookie count
 	function updateCookieCount() {
-		$('#yum').html('I ate ' + Cookies.get('lemon'));
-		$('#bite').html('I ate ' + Cookies.get('sugar'));
-		$('#eaten').html('I ate ' + Cookies.get('chocolate'));
+		$('#yum').html('you ate: ' + Cookies.get('lemon'));
+		$('#bite').html('you ate : ' + Cookies.get('sugar'));
+		$('#eaten').html('you ate: ' + Cookies.get('chocolate'));
 	}
 
 	$('#reset').on('click', function(){
