@@ -1,5 +1,5 @@
 $(function () {
-	
+	alert('* * * Warning: this site uses cookies * * *');
 	// create a counter to count how many cookies cookies eaten
 	//chocolate Chip
 	if (Cookies.get('chocolate') === undefined) {
@@ -14,6 +14,9 @@ $(function () {
 		Cookies.set('lemon', 0);
 	}
 
+	// if(updateTotals() === 100) {
+	// 	alert('You won a free cookie!');
+	// }
 
 	//create click event that adds count to cookies eaten
 	$('#chocolate').on('click', function(){
@@ -44,8 +47,13 @@ $(function () {
 		var totalChocolate = parseInt(Cookies.get('chocolate'));
 		var totalSugar = parseInt(Cookies.get('sugar'));
 		var totalLemon = parseInt(Cookies.get('lemon'));
-	
-		$('#consumed').html(totalChocolate + totalSugar + totalLemon);
+
+		var totalCookies = totalChocolate + totalSugar + totalLemon;
+
+		$('#consumed').html(totalCookies);
+		
+		return totalCookies;
+		
 	};
 
 //function to update cookie count
@@ -54,24 +62,16 @@ $(function () {
 		$('#bite').html('you ate : ' + Cookies.get('sugar'));
 		$('#eaten').html('you ate: ' + Cookies.get('chocolate'));
 	}
-
+//reset cookie count
 	$('#reset').on('click', function(){
 		//be able to reset the numbers
-		// alert('stop eating!!!');
+		alert('You are reseting total cookie count!!!');
 		 Cookies.set('chocolate', 0);
 		 Cookies.set('sugar', 0);
 		 Cookies.set('lemon', 0);
 		 updateTotals(); //add a reset for count
 		 updateCookieCount();
 	});
-
-
-
-
-
-
-	
-
 
 
 
