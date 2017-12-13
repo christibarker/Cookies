@@ -1,4 +1,4 @@
-/*css for background image and headers*/
+ /*css for background image and headers*/
 #background {
     position: relative;
     overflow: hidden;
@@ -20,7 +20,7 @@
    /* margin-top: 11%;*/
 } 
 
-#background h3, {
+#background h3 {
     position: relative;
     z-index: 2;
     margin-left: 9%;
