@@ -9,21 +9,24 @@
 #background h1 {
     position: relative;
     z-index: 2;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-left: 8%;
+    font-size: 3.9em;
 } 
 
 #background h2 {
     position: relative;
     z-index: 2;
     margin-left: 8%;
-   /* margin-top: 11%;*/
+    margin-top: -6%;
+    font-size: 35px;
 } 
 
 #background h3 {
     position: relative;
     z-index: 2;
     margin-left: 9%;
+    font-size: 27px;
     /* margin-top: -2%;*/
 } 
 
@@ -31,6 +34,7 @@
     position: relative;
     z-index: 2;
     margin-left: 9%;
+    font-size: 20px;
 /*    margin-top: -1%;*/
 } 
 
